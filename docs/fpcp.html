@@ -634,6 +634,20 @@ span.required {
     zoom: 90%;
     display: inline-block;
 }
+.buttons button:not([aria-disabled=true]) {
+    opacity: 1;
+    background-color: #f79d26;
+}
+@media (min-width: 640px) {
+    .container {
+        max-width: 450px;
+    }
+}
+@media (max-width: 480px) {
+    .content {
+        min-width: 100%;
+    }
+}
   </style>
   
   </head>
@@ -650,7 +664,7 @@ span.required {
         </header>
         <div id="api" data-name="SelfAsserted">
           <!-- Azure AD B2C will inject content here -->
-        </div>  
+        </div> 
       </div>
     </div>
   </body>
