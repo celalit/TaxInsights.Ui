@@ -584,7 +584,39 @@
       50% { width: 100%; }
       100% { width: 0; }
     }
-
+    .buttons #cancel {
+        padding: 0;
+        margin-left: auto;
+        background: 0 0;
+        border: 0;
+        width: inherit;
+        position: absolute;
+        background-color: transparent !important;
+        top: 28px;
+        left: 15px;
+        font-size: 1em;
+        color: #505050 !important;
+        box-shadow: none;
+        text-align: left;
+    }
+    .buttons #cancel:before {
+        padding: 10px;
+        vertical-align: sub;
+        zoom: 90%;
+        display: inline-block;
+    }
+    .buttons #cancel:before {
+        content: url(https://taxinsightsprod.b2clogin.com/static/tenant/templates/images/left-arrow.svg);
+    }
+    button#continue {
+        background-color: #ddd;
+        color: #000;
+    }
+    .buttons button:not([aria-disabled=true]) {
+        opacity: 1;
+        background-color: #f79d26 !important;
+        color: #fff !important;
+    }
   </style>
   
   </head>
