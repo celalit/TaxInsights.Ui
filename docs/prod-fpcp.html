@@ -657,6 +657,15 @@ input#email_ver_input:focus {
     border-color: rgb(247 147 26 / var(--tw-border-opacity));
     outline: transparent solid 2px;
     outline-offset: 2px;
+    animation: border_anim 3s linear forwards;
+}
+@keyframes border_anim {
+	0%{
+		width: 0%;
+	}
+	100%{
+		width: 100%;
+	}
 }
 /* mobile queries start */
 @media (min-width: 640px) {
